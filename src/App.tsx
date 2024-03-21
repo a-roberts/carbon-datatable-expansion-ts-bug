@@ -1,4 +1,5 @@
-import './MoreStyles.scss'
+import './styles.scss'
+import React from 'react';
 
 import {
   DataTable,
@@ -14,30 +15,25 @@ import {
 const rows = [{
   id: 'a',
   name: 'Load balancer 1',
-  status: 'Disabled',
-  props: {}
+  status: 'Disabled'
 }, {
   id: 'b',
   name: 'Load balancer 2',
-  status: 'Starting',
-  props: {}
+  status: 'Starting'
 },
 {
   id: 'c',
   name: 'Load balancer 3',
-  status: 'Active',
-  props: {}
+  status: 'Active'
 }]
 
 const headers = [{
   key: 'name',
-  header: 'Name',
-  props: {}
+  header: 'Name'
 },
 {
   key: 'status',
-  header: 'Status',
-  props: {}
+  header: 'Status'
 }]
 
 function App() {
