@@ -1,5 +1,4 @@
 import './styles.scss'
-import React from 'react';
 
 import {
   DataTable,
@@ -38,17 +37,16 @@ const headers = [{
   header: 'Status'
 }]
 
-function App() {
+function JSApp() {
   return (
     <div>
-      <h1>TS version (but not good ts, with strict off, with expect errors, can't find an example or how to figure it out otherwise)</h1>
+      <h1>JS version</h1>
       <DataTable rows={rows} headers={headers}>
       {({ rows, headers, getTableProps, getHeaderProps, getRowProps }) => (
           <Table {...getTableProps()}>
           <TableHead>
               <TableRow>
               {headers.map((header) => (
-                  // @ts-expect-error complains about MouseEvent missing properties from type MouseEvent. What mouse event?
                   <TableHeader {...getHeaderProps({ header })}>
                   {header.header}
                   </TableHeader>
@@ -57,7 +55,6 @@ function App() {
           </TableHead>
           <TableBody>
               {rows.map((row) => (
-              // @ts-expect-error complains about MouseEvent missing properties from type MouseEvent. What mouse event?
               <TableExpandRow {...getRowProps({ row })}>
                   {row.cells.map((cell) => (
                   <TableCell>{cell.value}</TableCell>
@@ -72,4 +69,4 @@ function App() {
   );
 }
 
-export default App;
+export default JSApp;
