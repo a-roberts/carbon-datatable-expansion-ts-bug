@@ -6,6 +6,7 @@ import {
   Table,
   TableHead,
   TableExpandRow,
+  TableExpandHeader,
   TableRow,
   TableHeader,
   TableBody,
@@ -47,6 +48,7 @@ function App() {
           <Table {...getTableProps()}>
           <TableHead>
               <TableRow>
+              <TableExpandHeader aria-label="expand row" />
               {headers.map((header) => (
                   // @ts-expect-error complains about MouseEvent missing properties from type MouseEvent. What mouse event?
                   <TableHeader {...getHeaderProps({ header })}>
