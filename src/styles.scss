@@ -1,3 +1,6 @@
+// What SCSS should I be using? I've taken from https://github.com/carbon-design-system/carbon/blob/main/packages/react/src/components/DataTable/stories/expansion/DataTable-expansion-story.scss
+// and I've found there is also https://github.com/carbon-design-system/carbon/blob/main/docs/migration/v11.md#scsscomponentsdata-table_data-tablescss which mentions
+// @use '@carbon/styles/scss/components/data-table/expandable';
 
 @use '@carbon/react/scss/reset';
 @use '@carbon/react/scss/type' as *;

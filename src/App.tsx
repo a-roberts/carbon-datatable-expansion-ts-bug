@@ -12,6 +12,8 @@ import {
   TableCell,
 } from '@carbon/react';
 
+// This is from https://react.carbondesignsystem.com/?path=/docs/components-datatable-expansion--overview
+
 const rows = [{
   id: 'a',
   name: 'Load balancer 1',
